@@ -32,12 +32,14 @@
 
 #define DIODE_DIRECTION COL2ROW
 // wiring of each half
-#define MATRIX_ROW_PINS { B1, B2, C7, B4, D7 }
-#define MATRIX_COL_PINS { F4, B0, F0, B7, B3, D2, D3, D5, D4, F5, F6, D6, C6, D1 }
-#define MATRIX_ROW_PINS_RIGHT { B1, B2, C7, B4, D7 }
-#define MATRIX_COL_PINS_RIGHT { F4, B0, F0, B7}
-//#define EE_HANDS
-#define SPLIT_HAND_PIN F7
+#define MATRIX_ROW_PINS { F1, F0, F7, F6, F5 }
+#define MATRIX_COL_PINS { F4, D5, D3, D2, D1, B7, C7, C6, B6, B5, B4, D7, D6, D4 }
+#define MATRIX_ROW_PINS_RIGHT { F1, F0, F7, F6, F5 }
+#define MATRIX_COL_PINS_RIGHT { F4, D5, D3, D2}
+
+/* Pin to VCC treated as left side
+*  Pin to GND treated as right side */
+#define SPLIT_HAND_PIN B0
 
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
@@ -49,3 +51,12 @@
 #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
+
+/* ws2812 RGB LED */
+/*
+#define RGB_DI_PIN E6
+#define RGBLIGHT_ANIMATIONS
+#define RGBLED_NUM 16    // Number of LEDs
+#define RGBLED_SPLIT { 8, 8 }
+#define RGBLIGHT_LED_MAP { 1, 2, 3, 12, 13, 14, 15, 0, 7, 6, 5, 4, 11, 10, 9, 8 }
+*/
