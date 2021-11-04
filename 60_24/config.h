@@ -33,7 +33,7 @@
 #define DIODE_DIRECTION COL2ROW
 // wiring of each half
 #define MATRIX_ROW_PINS { B1, B2, C7, B4, D7 }
-#define MATRIX_COL_PINS { F4, B0, F0, B7, B3, D2, D3, D5, D4, F5, F6, D6, C6, D4 }
+#define MATRIX_COL_PINS { F4, B0, F0, B7, B3, D2, D3, D5, D4, F5, F6, D6, C6, D1 }
 #define MATRIX_ROW_PINS_RIGHT { B1, B2, C7, B4, D7 }
 #define MATRIX_COL_PINS_RIGHT { F4, B0, F0, B7}
 //#define EE_HANDS
