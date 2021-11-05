@@ -18,3 +18,5 @@ Matrix:
 
  Extra Pin: 
  - VOG header with pin `B0`
+
+`qmk compile -kb 60_24/rev1 -km default`
